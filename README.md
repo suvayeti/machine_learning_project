@@ -6,6 +6,7 @@
 2. [Heroku Account](https://dashboard.heroku.com/login)
 3. [VS Code IDE](https://code.visualstudio.com/download)
 4. [GIT cli](https://git-scm.com/downloads)
+5. [GIT Documentation](https://git-scm.com/docs/gittutorial)
 
 
 Creating conda environment
@@ -48,4 +49,40 @@ git log
 To create version/commit all changes by git
 ```
 git commit -m "message"
+```
+
+To see the changes on file
+```
+git diff 
+```
+To setup CI/CD pipeline in heroku we need 3 information
+1. Heroku email: mrsuvash@gmail.com
+2. Heroku API key: 026f47c4-e78c-4650-be8c-11506e9a0762
+3. Heroku app name: ml-regression-ap
+
+BUILD DOCKER IMAGE
+```
+docker build -t <image_name>:<tagname> .
+```
+> Note: Image name for docker must be lowercase
+
+
+To list docker image
+```
+docker images
+```
+
+Run docker image
+```
+docker run -p 5000:5000 -e PORT=5000 f8c749e73678
+```
+
+To check running container in docker
+```
+docker ps
+```
+
+Tos stop docker conatiner
+```
+docker stop <container_id>
 ```
