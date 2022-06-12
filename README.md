@@ -57,7 +57,7 @@ git diff
 ```
 To setup CI/CD pipeline in heroku we need 3 information
 1. Heroku email: mrsuvash@gmail.com
-2. Heroku API key: 026f47c4-e78c-4650-be8c-11506e9a0762
+2. Heroku API key: <>
 3. Heroku app name: ml-regression-ap
 
 BUILD DOCKER IMAGE
