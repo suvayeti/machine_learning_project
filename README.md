@@ -51,14 +51,20 @@ To create version/commit all changes by git
 git commit -m "message"
 ```
 
-To see the changes on file
+To send version/changes to github
 ```
-git diff 
+git push origin main
 ```
+
+To check remote url 
+```
+git remote -v
+```
+
 To setup CI/CD pipeline in heroku we need 3 information
-1. Heroku email: mrsuvash@gmail.com
-2. Heroku API key: <>
-3. Heroku app name: ml-regression-ap
+1. HEROKU_EMAIL = anishyadav7045075175@gmail.com
+2. HEROKU_API_KEY = <>
+3. HEROKU_APP_NAME = ml-regression-app
 
 BUILD DOCKER IMAGE
 ```
@@ -85,4 +91,17 @@ docker ps
 Tos stop docker conatiner
 ```
 docker stop <container_id>
+```
+
+
+
+```
+python setup.py install
+```
+
+
+Install ipykernel
+
+```
+pip install ipykernel
 ```
